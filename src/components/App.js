@@ -8,7 +8,7 @@ import Image from '../containers/Image';
 {/*className="bb bw1 pb3" are used for styling using Tachyons*/}
 const App=()=>{
     return(
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <div className="tc">
             <h1 className="bb bw1 pb3">Fun With Images </h1>    
             <Route exact path='/' component={Images}/>   {/*Images component loads you the list of Images for both paths*/}
